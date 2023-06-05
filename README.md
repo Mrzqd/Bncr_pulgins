@@ -16,7 +16,7 @@
 ![image](https://github.com/Mrzqd/Bncr_pulgins/assets/104408988/913c4f73-9b46-4b9a-a3cd-201f0f867189)
 在群内发送time或任意字符
 ![image](https://github.com/Mrzqd/Bncr_pulgins/assets/104408988/30c105cd-c544-4972-b99f-e5afbef4363a)
-可以看到机器人已经可以收到消息了，
+可以看到机器人已经可以收到消息了，(出现shards不存在无需管理，改字段不印象使用，按照官方的说明这个字段是为机器人添加很多频道时候进行分片使用的：：https://bot.q.qq.com/wiki/develop/api/gateway/shard.html)
 set qqPD admin @后面的字段就是你的id 
 如set qqPD admin 1182xxxxxx3154
 然后在群内发送监听该群即可快乐玩耍
