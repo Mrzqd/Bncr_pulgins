@@ -1,6 +1,6 @@
 # 大更新！！！，修复了撤回bug,修改了消息字段
 ````
-```json
+```js
 {
     "userId": "data.msg.author.id",  //消息发送人ID
     "userName": "data.msg.author.username",  //消息发送人昵称
