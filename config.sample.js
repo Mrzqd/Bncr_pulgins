@@ -32,7 +32,8 @@ module.exports = {
         enable: false, //开关，开启后请在官方命令里面添加适配器qqPD
         appid: '', //字面意思
         token: '', //字面意思
-        intents: ['GUILD_MESSAGES'],// 事件订阅,用于开启可接收的消息类型,默认监听群聊，本版本也只适配了群聊
+        intents: ['GUILD_MESSAGES'],// 事件订阅,用于开启可接收的消息类型
+        hideTip:true //控制是否显示撤回消息的小灰条。true为因此，false为显示
     },
     /* HumanTG  Bncr内置的人行tg */
     HumanTG: {
