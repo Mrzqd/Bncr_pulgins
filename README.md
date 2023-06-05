@@ -1,3 +1,12 @@
+# 大更新！！！，修复了撤回bug,修改了消息字段
+{
+    userId: data.msg.author.id || '',  //消息发送人ID
+    userName: data.msg.author.username || '',  //消息发送人昵称
+    groupId: data.msg.guild_id + ":" + data.msg.channel_id || '',  // 消息来源频道ID:子频道ID,频道ID和子频道ID使用:进行分割
+    groupName: '',
+    msg: data.msg.content || '',  // 消息内容
+    msgId: String(data.msg.channel_id)+":"+String(data.msg.id)+":"+String(data.msg.author.id) || '', // 消息来源频道ID:子频道ID:消息ID:消息发送人ID
+  }
 # 更新了消息接收器开关和撤回显示开关，请更新config.js和qqPD.js
 # Bncr_plugins打成Bncr_pulgins了，哈哈哈~ 如果您感觉好用可以帮我点个star嘛
 ## qq频道适配器使用说明：
