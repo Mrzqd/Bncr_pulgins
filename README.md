@@ -1,4 +1,4 @@
-# Bncr_pulgins
+# Bncr_plugins打成Bncr_pulgins了，哈哈哈~ 如果您感觉好用可以帮我点个star嘛
 ## qq频道适配器使用说明：
 首先在qq开发者中心创建机器人  
 记录下botappid和机器人令牌  
