@@ -1,5 +1,5 @@
 # 注意!!!!!!,如果你发送信息控制台没有任何输出，请打开debug模式，先设置管理员，userID字段后面就是管理员！ set qqPD admin userID
-
+# Bncr_plugins打成Bncr_pulgins了，哈哈哈~ 如果您感觉好用可以帮我点个star嘛
 # 最新一版增加了开发审核时间的开关，需要在官方进行审核的可以更新此版本，记得更新config.js的内容
 此处提交审核后，请勿必配置好publish和Listened
 ![image](https://github.com/Mrzqd/Bncr_pulgins/assets/104408988/c030d7ee-a118-4424-99cb-aaa97f99c428)
@@ -18,7 +18,6 @@
   ```
 
 # 更新了消息接收器开关和撤回显示开关，请更新config.js和qqPD.js
-# Bncr_plugins打成Bncr_pulgins了，哈哈哈~ 如果您感觉好用可以帮我点个star嘛
 ## qq频道适配器使用说明：
 首先在qq开发者中心创建机器人  
 记录下botappid和机器人令牌  
