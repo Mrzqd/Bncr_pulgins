@@ -3,6 +3,8 @@
 ```diff
 - 消息发送最大长度为2500，如果你机器人提示msg over length 状态码为1000001，说明超过了bot单消息长度限制，请将消息分片！
  ```
+ [我的qq频道](https://pd.qq.com/s/gz6qod7fb) 
+ ### 请认领无界的身份
 # 最新一版增加了开发审核时间的开关，需要在官方进行审核的可以更新此版本，记得更新config.js的内容
 此处提交审核后，请勿必配置好publish和Listened
 ![image](https://github.com/Mrzqd/Bncr_pulgins/assets/104408988/c030d7ee-a118-4424-99cb-aaa97f99c428)
