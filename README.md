@@ -1,6 +1,6 @@
 # 注意!!!!!!,如果你发送信息控制台没有任何输出，请打开debug模式，先设置管理员，userID字段后面就是管理员！ set qqPD admin userID
 # Bncr_plugins打成Bncr_pulgins了，哈哈哈~ 如果您感觉好用可以帮我点个star嘛
-## 消息发送最大长度为2500，如果你机器人提示msg over length 状态码为1000001，说明超过了bot单消息长度限制，请将消息分片！
+## <span style="color: red;">消息发送最大长度为2500，如果你机器人提示msg over length 状态码为1000001，说明超过了bot单消息长度限制，请将消息分片！<span>
 # 最新一版增加了开发审核时间的开关，需要在官方进行审核的可以更新此版本，记得更新config.js的内容
 此处提交审核后，请勿必配置好publish和Listened
 ![image](https://github.com/Mrzqd/Bncr_pulgins/assets/104408988/c030d7ee-a118-4424-99cb-aaa97f99c428)
