@@ -1,3 +1,5 @@
+# 即将重构注入消息结构体，尽请期待...
+
 # 注意!!!!!!,如果你发送信息控制台没有任何输出，请打开debug模式，先设置管理员，userID字段后面就是管理员！ set qqPD admin userID
 # Bncr_plugins打成Bncr_pulgins了，哈哈哈~ 如果您感觉好用可以帮我点个star嘛
 ```diff
