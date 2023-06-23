@@ -13,7 +13,7 @@
  */
 
 module.exports = async () => {
-    let DEBUGGER = true // 接收器日志开关，用来debug
+    let DEBUGGER = false // 接收器日志开关，用来debug
     let tips = true;
     if (!sysMethod.config.qqPD.enable) return sysMethod.startOutLogs('qqPD 退出.');
     const TOKEN = sysMethod.config.qqPD.token;
