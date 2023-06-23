@@ -29,13 +29,16 @@ module.exports = {
         
     },
     qqPD: {
-        enable: false, //开关
+        enable: true, //开关
         appid: '', //字面意思
         token: '', //字面意思
-        intents: ['GUILD_MESSAGES'],// 事件订阅,用于开启可接收的消息类型
+        intents: [],// 事件订阅,用于开启可接收的消息类型,详情参考https://bot.q.qq.com/wiki/develop/api/gateway/intents.html，留空监听所有事件
         hideTip:true, //控制是否显示撤回消息的小灰条。true为因此，false为显示
         publish:false, // 提交审核使用true,不提交时候请改为false,此值为true时无需设置就可监听所有频道！！！
-        Listened:"" //已经监听的频道id,在已监听的频道内发送官方命令的群id命令可以查到
+        Listened:"", //已经监听的频道id,在已监听的频道内发送官方命令的群id命令可以查到
+        defaultchannel_id:"", //进入频道事件默认通知群id
+        message_reference:true,  // 控制回复消息是否引用，true为引用回复
+        upline:false, //上线通知，通知到管理员
     },
     /* HumanTG  Bncr内置的人行tg */
     HumanTG: {
