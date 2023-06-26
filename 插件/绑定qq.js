@@ -2,20 +2,33 @@
  * @author zhu
  * @name 绑定qq
  * @origin zhu
- * @version v1.0.0
+ * @version v1.1.0
  * @description 用于其他平台同步qq上的pinDB数据 todo:定时同步
- * @create_at 2023-06-26 09:24:15
+ * @create_at 2023-06-26 09:54:15
  * @rule ^绑定qq$
  * @priority 1000
  * @admin flase
  * @public false
  * @disable false
  */
+const pinDB = new BncrDB('pinDB');
 module.exports = async s => {
     const user = s.getUserId()
     const qqb = new BncrDB("绑定qq")
     if(await qqb.get(user)){
-        s.reply("你已绑定"+await qqb.get(user)+"\n如需修改请联系管理员")
+        s.reply("你已绑定"+await qqb.get(user)+"\n如需删除请回复“删除q绑”，不需要回复任意")
+        is = await s.waitInput(async (s)=> {
+        }, 30);
+        if (is === null) return s.reply('超时退出');
+        if (is.getMsg() === 'q') return s.reply('已退出');
+        if(is.getMsg()=="删除q绑"){
+            t = await qqb.del(user)
+            st = await pinDB.del(s.getFrom()+":"+s.getUserId())
+            console.log(t,s)
+            if(t&&st){
+                s.reply("删除成功")
+            }
+        }
     }else{
         s.reply("请发送qq号")
         qq = await s.waitInput(async (s)=> {
@@ -26,7 +39,7 @@ module.exports = async s => {
         await sysMethod.push({
                     platform: 'qq',
                     groupId: `0`,
-                    userId: `xxxxxxxx`,  //此处填写接收验证码的qq号
+                    userId: `xxxxxxx`,  //此处填写接收验证码的qq号
                     msg: s.getUserName()+"的验证码是："+randoms,
                 })
         s.reply("请向管理员索要验证码！\n验证码是随机的，请不要发送别人的验证码")
@@ -38,12 +51,11 @@ module.exports = async s => {
         if(code.getMsg()==randoms){
             qqb.set(user,qq.getMsg())
             s.reply("已绑定")
-            const pinDB = new BncrDB('pinDB');
             v = await pinDB.get("qq:"+qq.getMsg())
             v.ID = s.getUserId()
             v.Form = s.getFrom()
             v.Name = s.getUserName()
-            pinDB.set(s.getFrom()+":"+s.getUserId(),v)
+            await pinDB.set(s.getFrom()+":"+s.getUserId(),v)
         }else{
             s.reply("验证码错误，已退出")
         }
