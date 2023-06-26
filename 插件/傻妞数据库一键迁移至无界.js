@@ -12,7 +12,6 @@
  * @disable false
  */
 
-const { cookie, header } = require('express/lib/response');
 module.exports = async s => {
     const request = require('util').promisify(require('request'));
     //获取全部的存储库
