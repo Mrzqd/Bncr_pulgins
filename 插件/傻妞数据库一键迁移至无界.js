@@ -38,8 +38,8 @@ module.exports = async s => {
     alldata = alldata.data
     for (i in alldata) {
         ku = alldata[i].value
-        // if(banku.indexOf(ku) != -1){
-        if(ku!='pinDB'){
+        if(banku.indexOf(ku) != -1){
+        // if(ku!='pinDB'){
             continue
         } else {
             console.log(`开始迁移${ku}`)
