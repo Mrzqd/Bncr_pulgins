@@ -7,7 +7,7 @@
  * @create_at 2023-04-22 10:24:15
  * @rule ^一键迁移
  * @priority 100000000
- * @admin flase
+ * @admin true
  * @public false
  * @disable false
  */
