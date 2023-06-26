@@ -13,6 +13,7 @@
  */
 const pinDB = new BncrDB('pinDB');
 module.exports = async s => {
+    yzmqq = "xxxxxxxxx" //这里填写接收验证码的qq，不想让qq接收验证码请自行在40行改push方法
     const user = s.getUserId()
     const qqb = new BncrDB("绑定qq")
     if(await qqb.get(user)){
@@ -36,10 +37,11 @@ module.exports = async s => {
         if (qq === null) return s.reply('超时退出');
         if (qq.getMsg() === 'q') return s.reply('已退出');
         var randoms = generateRandomNumber()
+        // 验证码推送
         await sysMethod.push({
                     platform: 'qq',
                     groupId: `0`,
-                    userId: `xxxxxxx`,  //此处填写接收验证码的qq号
+                    userId: yzmqq,  
                     msg: s.getUserName()+"的验证码是："+randoms,
                 })
         s.reply("请向管理员索要验证码！\n验证码是随机的，请不要发送别人的验证码")
