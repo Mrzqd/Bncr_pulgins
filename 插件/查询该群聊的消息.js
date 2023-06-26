@@ -47,11 +47,13 @@ module.exports = async s => {
                     } else {
                         console.log('Table "msg" already exists.');
                         if (s.getGroupId() == "0") {
-                            const whereClause = 'userId = ?';
-                            const params = s.getUserId();
+                            console.log("私聊查询")
+                            var whereClause = 'userId = ?';
+                            var params = s.getUserId();
                         } else {
-                            const whereClause = 'groundId = ?';
-                            const params = s.getGroupId();
+                            console.log("群聊查询")
+                            var whereClause = 'groundId = ?';
+                            var params = s.getGroupId();
                         }
                         db.all(`SELECT *
                                 FROM msg
