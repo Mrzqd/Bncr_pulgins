@@ -6,7 +6,7 @@
  * @description sillyGirl迁移.js
  * @create_at 2023-04-22 10:24:15
  * @rule ^一键迁移
- * @priority 100000000
+ * @priority 100
  * @admin true
  * @public false
  * @disable false
