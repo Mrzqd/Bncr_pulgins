@@ -19,7 +19,7 @@ module.exports = async s => {
     const sqlite3 = require('sqlite3').verbose();
     const db = await new sqlite3.Database(__dirname + '/聊天记录/message.db', (err) => {
         if (err) {
-            console.error('Error opening database:', err.message);
+            console.error('打开数据库失败:', err.message);
         } else {
             // 检查数据库是否存在
             db.serialize(() => {
@@ -39,9 +39,9 @@ module.exports = async s => {
                                     msgId      TEXT
                                 )`, (err) => {
                             if (err) {
-                                console.error('Error creating table:', err.message);
+                                console.error('数据表创建失败:', err.message);
                             } else {
-                                console.log('Table "msg" created successfully.');
+                                console.log('数据表创建成功.');
                             }
                         });
                     } else {
