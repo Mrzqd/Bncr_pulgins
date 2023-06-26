@@ -50,7 +50,7 @@ module.exports = async s => {
             for(j in kudata){
                 j_value = kudata[j]
                 j = j.replace(ku+".","")
-                await setku.set(j,j_value)
+                setku.set(j,j_value)
             }
         }
     }
