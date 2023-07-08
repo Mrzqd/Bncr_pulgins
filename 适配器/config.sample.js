@@ -62,7 +62,7 @@ module.exports = {
         tgBot: {
         enable: false, //开关
         token: '', //字面意思
-        proxyHost: ', //反代api.telegram.org的地址
+        proxyHost: '', //反代api.telegram.org的地址
         proxyEnable: false, /* 暂时不支持代理 ,不用填*/
         proxy: {
             host: 'http://172.17.0.10', // 主机地址 域名或ip
