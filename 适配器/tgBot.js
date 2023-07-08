@@ -4,7 +4,7 @@
  * @name tgBot
  * @origin Bncr团队
  * @version 1.0.1
- * @description tgBot适配器
+ * @description tgBot适配器，注意更改config.js！！！
  * @adapter true
  * @public false
  * @disable false
