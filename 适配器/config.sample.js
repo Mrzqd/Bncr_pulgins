@@ -59,13 +59,14 @@ module.exports = {
         },
     },
     /* tgBot */
-    tgBot: {
+        tgBot: {
         enable: false, //开关
         token: '', //字面意思
+        proxyHost: ', //反代api.telegram.org的地址
         proxyEnable: false, /* 暂时不支持代理 ,不用填*/
         proxy: {
-            host: '', // 主机地址 域名或ip
-            port: 9943, // 端口号 改成你的
+            host: 'http://172.17.0.10', // 主机地址 域名或ip
+            port: 5001, // 端口号 改成你的
             socksType: 5, // 版本类型  不用改
             timeout: 5, // 链接超时,
             username: '', //账号密码
