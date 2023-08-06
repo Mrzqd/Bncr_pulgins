@@ -115,9 +115,10 @@ module.exports = async s => {
         url,
         headers:{
             "User-Agent":USER_AGENT_Browser[Math.floor(Math.random() * USER_AGENT_Browser.length)]
-        }
+        },
+        followRedirect:false
     }
-    const r = await request({url,followRedirect:false})
+    const r = await request(opt)
     console.log(r.headers)
     s.reply({
         type:"video",
