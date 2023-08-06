@@ -119,7 +119,7 @@ module.exports = async s => {
         followRedirect:false
     }
     const r = await request(opt)
-    console.log(r.headers)
+    // console.log(r.headers)
     s.reply({
         type:"video",
         path:r.headers.location
