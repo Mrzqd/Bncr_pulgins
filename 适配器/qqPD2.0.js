@@ -9,7 +9,7 @@
  * @public false
  * @disable false
  * @priority 10000
- * @Copyright ©2023 zhu and Anmours. All rights reserved
+ * @Copyright ©2024 zhu and Anmours. All rights reserved
  * Unauthorized copying of this file, via any medium is strictly prohibited
  */
 
@@ -66,7 +66,7 @@ module.exports = async () => {
             "此版本基本实现了消息发送，撤回。消息推送暂时不可用\n" +
             "消息仅支持文字和图片，如果消息发送失败请检查消息内是否存在类似URL格式\n" +
             "如：1.a格式，*.*格式，此为腾讯的限制，不允许发送未备案链接\n" +
-            " ©2023 zhu. All rights reserved || github.com/Mrzqd\n" +
+            " ©2024 zhu. All rights reserved || github.com/Mrzqd\n" +
             "使用说明请前往 https://github.com/Mrzqd/Bncr_pulgins\n" +
             "*******************************************************************\n如需关闭提升请将适配器前面的tips设置为false\n\n\n\n")
     }
