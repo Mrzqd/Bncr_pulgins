@@ -49,7 +49,7 @@ module.exports = async () => {
     /* HideStart */
     const TOKEN = ConfigDB.userConfig.token;
     const APPID = ConfigDB.userConfig.appid;
-    const INTENTS = ConfigDB.userConfig.intents.split(',');
+    const INTENTS = ConfigDB.userConfig.intents ? ConfigDB.userConfig.intents.split(',') : [];
     const hideTip = ConfigDB.userConfig.hideTip;
     const publish = !ConfigDB.userConfig.qqPD;
     const Listened = ConfigDB.userConfig.Listened ? ConfigDB.userConfig.Listened : '';
