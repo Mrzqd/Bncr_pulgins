@@ -3,7 +3,7 @@
  * @author Mrzqd
  * @name qqPD
  * @origin Mrzqd
- * @version 3.0.1
+ * @version 3.0.2
  * @description qq频道机器人适配器
  * @adapter true
  * @public false
@@ -51,7 +51,7 @@ module.exports = async () => {
     const APPID = ConfigDB.userConfig.appid;
     const INTENTS = ConfigDB.userConfig.intents ? ConfigDB.userConfig.intents.split(',') : [];
     const hideTip = ConfigDB.userConfig.hideTip;
-    const publish = !ConfigDB.userConfig.qqPD;
+    const publish = !ConfigDB.userConfig.publish;
     const Listened = ConfigDB.userConfig.Listened ? ConfigDB.userConfig.Listened : '';
     const defaultchannel_id = ConfigDB.userConfig.defaultchannel_id;
     const message_reference_stutas = ConfigDB.userConfig.message_reference;
